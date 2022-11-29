@@ -1,10 +1,12 @@
 import { Transition } from '@headlessui/react'
+import logoAlt from '../assets/logo-alt.svg';
+import logo from '../assets/logo.svg';
 
 const HomePage = () => {
     return (
         <Transition
             className={
-                'flex h-full w-full items-center justify-center bg-zinc-700/20 p-24'
+                'flex min-h-screen w-full items-center justify-center p-24'
             }
             as="div"
             show={true}
@@ -14,15 +16,19 @@ const HomePage = () => {
         >
             <div
                 className={
-                    'mx-auto mt-48 max-w-4xl  px-4 text-center text-white'
+                    'mx-auto max-w-4xl  px-4 text-center text-white'
                 }
             >
-                <h1 className={'text-zinc-900 text-6xl font-bold'}>
-                    Pupuce
-                </h1>
+                <div className={"flex flex-col items-center justify-center"}>
+                    <h1 className={'sr-only'}>
+                        Pupuce
+                    </h1>
+                    <img src={logoAlt} alt="Logo" className={'w-28 mb-4'}/>
+                    <img src={logo} alt="Logo" className={"w-80"} />
+                </div>
 
-                <p className={'text-zinc-900 text-xl'}>
-                    Pour la protection de vos animaux de compagnie,
+                <p className={'text-zinc-600 text-xl mt-8'}>
+                    Pour la protection de vos animaux de compagnie,<br/>
                     l'astuce c'est Pupuce™.
                 </p>
 
