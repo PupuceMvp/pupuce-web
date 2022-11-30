@@ -37,8 +37,8 @@
     /*button global*/
     .btn {
         @apply shadow-none;
+        @apply rounded-md;
         @apply inline-flex items-center whitespace-nowrap;
-        @apply px-4 py-2 text-sm;
         @apply focus:outline-none focus-visible:ring;
         @apply transition-colors duration-75;
     }
@@ -63,8 +63,8 @@
     /*button variant*/
     .btn-primary {
         @apply text-white;
-        @apply bg-teal-700;
-        @apply border border-teal-700
+        @apply bg-primary-dark;
+        @apply border border-primary-dark
     }
 
     .btn-primary-outline {

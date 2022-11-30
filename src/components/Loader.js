@@ -5,7 +5,7 @@ const Loader = ({ message }) => {
         <div className={'absolute flex h-full w-full items-center'}>
             <Transition
                 className={
-                    'flex h-full w-full items-center justify-center bg-zinc-700/20 p-24'
+                    'flex h-full w-full items-center justify-center p-24'
                 }
                 as="div"
                 show={true}
