@@ -1,0 +1,84 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+
+    /*layout*/
+    .container {
+        @apply max-w-7xl mx-auto px-4;
+    }
+
+    /*background colors*/
+    .bg-body {
+        @apply bg-zinc-100
+    }
+
+    .bg-body-inverted {
+        @apply bg-zinc-800
+    }
+
+    /*text colors*/
+    .color-body {
+        @apply text-zinc-600
+
+    }
+
+    .color-body-inverted {
+        @apply text-white
+
+    }
+
+    .color-accent {
+        @apply text-red-500
+
+    }
+
+    /*button global*/
+    .btn {
+        @apply shadow-none;
+        @apply rounded-md;
+        @apply inline-flex items-center whitespace-nowrap;
+        @apply focus:outline-none focus-visible:ring;
+        @apply transition-colors duration-75;
+    }
+
+    /*button size*/
+    .btn-xs {
+        @apply !px-2 !py-1  !text-xs;
+    }
+
+    .btn-md {
+        @apply !px-4 !py-2;
+    }
+
+    .btn-sm {
+        @apply !px-2 !py-1  !text-xs;
+    }
+
+    .btn-lg {
+        @apply !px-4 !py-4  !text-lg;
+    }
+
+    /*button variant*/
+    .btn-primary {
+        @apply text-white;
+        @apply bg-primary-dark;
+        @apply border border-primary-dark
+    }
+
+    .btn-primary-outline {
+        @apply text-teal-700;
+        @apply bg-transparent;
+        @apply border border-teal-700
+    }
+
+    /*
+    focus
+    */
+    .no-focus {
+        @apply focus:border-transparent;
+        @apply focus:outline-none;
+        @apply focus:ring-0;
+    }
+}
