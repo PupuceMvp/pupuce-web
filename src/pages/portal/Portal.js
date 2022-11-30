@@ -36,7 +36,7 @@ const Location = ({position, setPosition}) => {
         map.on('locationfound', (event) => {
             setPosition(event.latlng)
         })
-    }, [map])
+    }, [map,setPosition])
 
     /* allow drag the marker to adjust position */
     const eventHandlers = useMemo(() => ({
@@ -46,7 +46,7 @@ const Location = ({position, setPosition}) => {
                 setPosition(marker.getLatLng())
             }
         },
-    }), [],)
+    }), [setPosition],)
 
     return position ? (<>
         <Circle center={position} weight={2} color={'#FFD496'} fillColor={'#FFD496'} fillOpacity={0.3}
@@ -180,7 +180,7 @@ const Portal = () => {
                                                 Repudiandae sint consequuntur vel. Amet ut nobis explicabo numquam
                                                 expedita quia omnis voluptatem. Minus
                                                 quidem ipsam quia iusto...
-                                                <a href='#' className={'underline text-primary-dark'}>Voir une photos</a>
+                                                <a href={"https://www.google.com"} className={'underline text-primary-dark'}>Voir une photos</a>
                                             </p>
                                         </div>
                                     </div>
