@@ -54,7 +54,6 @@ const Location = ({position, setPosition}) => {
         <Marker position={position} draggable={true}
                 eventHandlers={eventHandlers} ref={markerRef}>
             <Tooltip direction="bottom" offset={[-15, 30]} opacity={1} permanent>
-
                         <span className={'text-center'}>
                             <span className={'block font-bold'}>🐶 Votre chien est ici </span>
                              <span className={"block font-normal text-zinc-500 text-xs"}>(déplacer le marker pour ajuster la position)</span>
@@ -244,7 +243,7 @@ const Portal = () => {
                             </div>
                         ) :
                         (
-                            <Loader message={"Désolé, nous n'avons pas réussi à identifier cet animal..."}></Loader>
+                            <Loader message={"Désolé, nous n'avons pas réussi à identifier cet animal ..."}></Loader>
                         )
                     }
                 </>
