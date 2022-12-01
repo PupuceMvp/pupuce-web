@@ -14,6 +14,7 @@ import {Transition} from '@headlessui/react'
 import Loader from '../../components/Loader'
 import logo from "../../assets/logo.svg";
 import Feedback from "../../components/Feedback";
+import convertToRelativeDate from "../../util/date";
 
 // util for leaflet
 const tileLayer = {
@@ -154,25 +155,24 @@ const Portal = () => {
                                                 <div className="mr-4 flex-shrink-0 self-center">
                                                     <img
                                                         className="inline-block h-16 w-16 rounded-full object-cover"
-                                                        src="https://jardinage.lemonde.fr/images/dossiers/categories3/racedecien-083123-650-325.jpg"
+                                                        src={singlePetData.image.secure_url}
                                                         alt=""
                                                     />
                                                 </div>
                                                 <div>
                                                     <h4 className="text-lg font-bold text-zinc-600">{singlePetData.name} </h4>
                                                     <p className={"text-zinc-500 font-normal"}>
-
                                                         {singlePetData.type ? singlePetData.type : ' -- '} •
                                                         {singlePetData.breed ? singlePetData.breed : ' -- '} •
-                                                        {singlePetData.age ? singlePetData.age : ' -- '} •
+                                                        {singlePetData.birthday ? convertToRelativeDate(singlePetData.birthday) : ' -- '} •
                                                         {singlePetData.color ? singlePetData.color : ' -- '}
+                                                        <a href={"https://www.google.com"}
+                                                           className={'underline text-primary-dark'}>Agrandir la photos</a>
                                                     </p>
                                                     <p className="mt-1 text-zinc-600">
-                                                        Repudiandae sint consequuntur vel. Amet ut nobis explicabo numquam
+                                                        [description de l'animal] Repudiandae sint consequuntur vel. Amet ut nobis explicabo numquam
                                                         expedita quia omnis voluptatem. Minus
                                                         quidem ipsam quia iusto...
-                                                        <a href={"https://www.google.com"}
-                                                           className={'underline text-primary-dark'}>Voir une photos</a>
                                                     </p>
                                                 </div>
                                             </div>
