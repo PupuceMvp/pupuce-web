@@ -238,7 +238,7 @@ const Portal = () => {
                                         </div>
                                     </div>
                                 ) :
-                                    <Feedback message={["Votre message a été envoyé." , <br/> , <span className={"font-bold"}>🤗{singlePetData.name} et on propriétaire vous remercient.</span>]} type="success"></Feedback>
+                                    <Feedback message={["Votre message a été envoyé." , <br/> , <span className={"font-bold"}>🤗{singlePetData.name} et son propriétaire vous remercient.</span>]} type="success"></Feedback>
                                 }
                             </>
                         ) :
