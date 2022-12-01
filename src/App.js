@@ -1,7 +1,7 @@
 import './styles/index.css'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import HomePage from './pages/HomePage'
-import SendReport from "./pages/found/sendReport";
+import Portal from "./pages/portal/Portal";
 
 function App() {
     return (
@@ -9,11 +9,11 @@ function App() {
             <Routes>
                 {/*Homepage*/}
                 <Route path="/" element={<HomePage />} />
-                {/*Send report by pets founded*/}
+                {/*Action portal for pet*/}
                 <Route
-                    path="/found/:uid"
+                    path="/portal/:uid"
                     element={
-                        <SendReport/>
+                        <Portal/>
                     }
                 />
             </Routes>
