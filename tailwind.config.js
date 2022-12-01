@@ -17,7 +17,7 @@ module.exports = {
                 }
             },
             fontFamily: {
-                alt: ['"Roboto Condensed"', 'Helvetica', 'Arial', 'sans-serif'],
+                alt: ['Roboto', 'Helvetica', 'Arial', 'sans-serif'],
             },
         },
     },
