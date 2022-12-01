@@ -13,6 +13,7 @@
     "clsx": "^1.2.1",
     "cors": "^2.8.5",
     "cra-template": "1.2.0",
+    "date-fns": "^2.29.3",
     "env-cmd": "^10.1.0",
     "leaflet": "^1.9.3",
     "prettier-plugin-tailwindcss": "^0.1.13",

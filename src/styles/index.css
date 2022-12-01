@@ -9,30 +9,7 @@
         @apply max-w-7xl mx-auto px-4;
     }
 
-    /*background colors*/
-    .bg-body {
-        @apply bg-zinc-100
-    }
 
-    .bg-body-inverted {
-        @apply bg-zinc-800
-    }
-
-    /*text colors*/
-    .color-body {
-        @apply text-zinc-600
-
-    }
-
-    .color-body-inverted {
-        @apply text-white
-
-    }
-
-    .color-accent {
-        @apply text-red-500
-
-    }
 
     /*button global*/
     .btn {
@@ -67,11 +44,6 @@
         @apply border border-primary-dark
     }
 
-    .btn-primary-outline {
-        @apply text-teal-700;
-        @apply bg-transparent;
-        @apply border border-teal-700
-    }
 
     /*
     focus
